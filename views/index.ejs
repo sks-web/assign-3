@@ -1,0 +1,13 @@
+<%- include("layouts/header.ejs") %>
+<%- include("layouts/navigation.ejs") %>
+<h1>User Name:</h1>
+<ul>
+    <% if(userList.length > 0){ %>
+        <% for (var x in userList){%>
+            <li><%= userList[x] %></li>
+        <% } %>
+    <% }else{ %>
+        <h2>No Data Found</h2>
+    <% } %>
+</ul>
+<%- include("layouts/footer.ejs") %>

@@ -1,0 +1,8 @@
+<%- include("layouts/header.ejs") %>
+<%- include("layouts/navigation.ejs") %>
+<form action="/add-user" method="post">
+    <strong><label for="">Enter User Name</label>:<br></strong>
+    <input type="text" name="userName" placeholder="Enter Name">
+    <button>Add</button>
+</form>
+<%- include("layouts/footer.ejs") %>
