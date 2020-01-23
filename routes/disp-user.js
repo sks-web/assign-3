@@ -2,14 +2,9 @@
 
 const express = require("express");
 const router = express.Router();
-const usersData = require("./add-user");
+// const usersData = require("./add-user");
+const userController = require("../controllers/user");
 
-router.get("/", (req, res, next) => {
-    res.render("index", {
-        pageTitle: "Display User",
-        path: "/",
-        userList: usersData.users
-    });
-});
+router.get("/", userController.getDispUser);
 
 module.exports = router;

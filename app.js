@@ -15,7 +15,7 @@ app.set("view engine", "ejs");
 app.set("views", "views");
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use(addUser.router);
+app.use(addUser);
 app.use(dispUser);
 
 app.use((req, res, next) => {
